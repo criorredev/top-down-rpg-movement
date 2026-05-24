@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bvhbunpey2xig"]
+
+[ext_resource type="Texture2D" uid="uid://cs7dqepwrkir1" path="res://assets/images/lilguy.png" id="1_iairh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iairh"]
+radius = 5.0
+height = 20.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=2018811094]
+
+[node name="Lilguy" type="Sprite2D" parent="." unique_id=64670757]
+texture = ExtResource("1_iairh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lilguy" unique_id=1538404048]
+shape = SubResource("CapsuleShape2D_iairh")

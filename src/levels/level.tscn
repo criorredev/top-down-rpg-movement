@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cpufxf4c4nw58"]
+
+[ext_resource type="PackedScene" uid="uid://bvhbunpey2xig" path="res://src/actors/player.tscn" id="1_g8rii"]
+
+[node name="Node2D" type="Node2D" unique_id=1756356210]
+position = Vector2(320, 180)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=678127803]
+
+[node name="CharacterBody2D" parent="." unique_id=2018811094 instance=ExtResource("1_g8rii")]
