@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://bvhbunpey2xig"]
+[gd_scene format=3 uid="uid://db6mljqls13ar"]
 
-[ext_resource type="Script" uid="uid://cd8df214x4cl4" path="res://src/actors/player.gd" id="1_gdh0h"]
-[ext_resource type="Texture2D" uid="uid://slbgatbldlr1" path="res://assets/images/lilguy_player.png" id="2_foe4e"]
-[ext_resource type="Texture2D" uid="uid://bqdj8bxaijh1" path="res://assets/images/swordslash.png" id="3_foe4e"]
+[ext_resource type="Script" uid="uid://cd8df214x4cl4" path="res://src/actors/player.gd" id="1_pdfo5"]
+[ext_resource type="Texture2D" uid="uid://cs7dqepwrkir1" path="res://assets/images/lilguy_enemy.png" id="2_pdfo5"]
+[ext_resource type="Texture2D" uid="uid://bqdj8bxaijh1" path="res://assets/images/swordslash.png" id="3_frsag"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xk21n"]
 size = Vector2(18, 8)
@@ -11,16 +11,16 @@ size = Vector2(18, 8)
 radius = 5.0
 height = 20.0
 
-[node name="Player" type="CharacterBody2D" unique_id=2018811094]
-script = ExtResource("1_gdh0h")
+[node name="Enemy" type="CharacterBody2D" unique_id=2018811094]
+script = ExtResource("1_pdfo5")
 
 [node name="Lilguy" type="Sprite2D" parent="." unique_id=64670757]
-texture = ExtResource("2_foe4e")
+texture = ExtResource("2_pdfo5")
 
 [node name="SwordHitbox" type="Area2D" parent="." unique_id=1777323597]
 
 [node name="Sword" type="Sprite2D" parent="SwordHitbox" unique_id=1058210818]
-texture = ExtResource("3_foe4e")
+texture = ExtResource("3_frsag")
 
 [node name="SwordCollision" type="CollisionShape2D" parent="SwordHitbox" unique_id=499687842]
 position = Vector2(0, 3)

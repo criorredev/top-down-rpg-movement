@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cs7dqepwrkir1"
-path="res://.godot/imported/lilguy.png-051ea7725e05924272fe99d4c4cd30d6.ctex"
+uid="uid://bqdj8bxaijh1"
+path="res://.godot/imported/swordslash.png-0f374cf7637bf061be73153f68e03215.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/lilguy.png"
-dest_files=["res://.godot/imported/lilguy.png-051ea7725e05924272fe99d4c4cd30d6.ctex"]
+source_file="res://assets/images/swordslash.png"
+dest_files=["res://.godot/imported/swordslash.png-0f374cf7637bf061be73153f68e03215.ctex"]
 
 [params]
 
