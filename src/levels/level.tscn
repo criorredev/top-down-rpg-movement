@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cpufxf4c4nw58"]
 
 [ext_resource type="PackedScene" uid="uid://bvhbunpey2xig" path="res://src/actors/player.tscn" id="1_g8rii"]
+[ext_resource type="PackedScene" uid="uid://db6mljqls13ar" path="res://src/actors/enemy.tscn" id="2_ub47v"]
 
 [node name="Node2D" type="Node2D" unique_id=1756356210]
 position = Vector2(320, 180)
@@ -8,4 +9,8 @@ position = Vector2(320, 180)
 [node name="Camera2D" type="Camera2D" parent="." unique_id=678127803]
 zoom = Vector2(3, 3)
 
-[node name="CharacterBody2D" parent="." unique_id=2018811094 instance=ExtResource("1_g8rii")]
+[node name="Player" parent="." unique_id=1155009765 instance=ExtResource("1_g8rii")]
+position = Vector2(-36, 0)
+
+[node name="Enemy" parent="." unique_id=428657011 instance=ExtResource("2_ub47v")]
+position = Vector2(36, 0)

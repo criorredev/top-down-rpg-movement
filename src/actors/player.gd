@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var speed = 60
+@export var player: CharacterBody2D
 
 var mouse_pos
 var player_pos
@@ -12,6 +13,7 @@ func _physics_process(_delta):
 	if Input.is_action_pressed("player_run"):
 		velocity = input * (speed * 1.828)
 	move_and_slide()
+
 
 func _input(event):
 	if event.is_action_pressed("attack"):

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://db6mljqls13ar"]
 
-[ext_resource type="Script" uid="uid://cd8df214x4cl4" path="res://src/actors/player.gd" id="1_pdfo5"]
+[ext_resource type="Script" uid="uid://c6w8fbfooduhj" path="res://src/actors/enemy.gd" id="1_pdfo5"]
 [ext_resource type="Texture2D" uid="uid://cs7dqepwrkir1" path="res://assets/images/lilguy_enemy.png" id="2_pdfo5"]
 [ext_resource type="Texture2D" uid="uid://bqdj8bxaijh1" path="res://assets/images/swordslash.png" id="3_frsag"]
 

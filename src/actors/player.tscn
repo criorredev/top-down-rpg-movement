@@ -11,8 +11,9 @@ size = Vector2(18, 8)
 radius = 5.0
 height = 20.0
 
-[node name="Player" type="CharacterBody2D" unique_id=2018811094]
+[node name="Player" type="CharacterBody2D" unique_id=2018811094 node_paths=PackedStringArray("player")]
 script = ExtResource("1_gdh0h")
+player = NodePath(".")
 
 [node name="Lilguy" type="Sprite2D" parent="." unique_id=64670757]
 texture = ExtResource("2_foe4e")
