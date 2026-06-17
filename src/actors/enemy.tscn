@@ -20,6 +20,7 @@ texture = ExtResource("2_pdfo5")
 [node name="SwordHitbox" type="Area2D" parent="." unique_id=1777323597]
 
 [node name="Sword" type="Sprite2D" parent="SwordHitbox" unique_id=1058210818]
+visible = false
 texture = ExtResource("3_frsag")
 
 [node name="SwordCollision" type="CollisionShape2D" parent="SwordHitbox" unique_id=499687842]

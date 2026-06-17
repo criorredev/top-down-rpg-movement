@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cd8df214x4cl4" path="res://src/actors/player.gd" id="1_gdh0h"]
 [ext_resource type="Texture2D" uid="uid://slbgatbldlr1" path="res://assets/images/lilguy_player.png" id="2_foe4e"]
 [ext_resource type="Texture2D" uid="uid://bqdj8bxaijh1" path="res://assets/images/swordslash.png" id="3_foe4e"]
+[ext_resource type="Script" uid="uid://drxxqni4s1abr" path="res://src/actors/sword_hitbox.gd" id="3_xk21n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xk21n"]
 size = Vector2(18, 8)
@@ -19,13 +20,22 @@ player = NodePath(".")
 texture = ExtResource("2_foe4e")
 
 [node name="SwordHitbox" type="Area2D" parent="." unique_id=1777323597]
+script = ExtResource("3_xk21n")
 
 [node name="Sword" type="Sprite2D" parent="SwordHitbox" unique_id=1058210818]
+visible = false
 texture = ExtResource("3_foe4e")
 
 [node name="SwordCollision" type="CollisionShape2D" parent="SwordHitbox" unique_id=499687842]
+visible = false
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_xk21n")
 
+[node name="SwordTimer" type="Timer" parent="SwordHitbox" unique_id=1243189111]
+wait_time = 0.2
+one_shot = true
+
 [node name="LilguyCollision" type="CollisionShape2D" parent="." unique_id=1538404048]
 shape = SubResource("CapsuleShape2D_iairh")
+
+[connection signal="timeout" from="SwordHitbox/SwordTimer" to="SwordHitbox" method="_on_sword_timer_timeout"]
